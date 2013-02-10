@@ -1,13 +1,13 @@
-#
-# MySQL Replication | Slow Query Monitor Web Utility
-# 
-# Provides the ability to have up to the (interval of your choice)
-# view of your mysql servers. You have the ability to 
-# kill queries directly from the interface. You also get up to date
-# replication statistics, including lag time and Slave IO Status.
-# 
-# @author jearly@blacklightinnovation.vom
-# 
+
+ # MySQL Replication | Slow Query Monitor Web Utility
+ 
+ Provides the ability to have up to the (interval of your choice)
+ view of your mysql servers. You have the ability to 
+ kill queries directly from the interface. You also get up to date
+ replication statistics, including lag time and Slave IO Status.
+ 
+ Author jearly@blacklightinnovation.vom
+ 
 
 # Installation Instructions
 
