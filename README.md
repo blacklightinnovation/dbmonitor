@@ -1,4 +1,4 @@
-# MySQL Replication | Slow Query Monitor Web Utility
+# MySQL Replication & Slow Query Monitor Web Utility
  
  Provides the ability to have up to the (interval of your choice)
  view of your mysql servers. You have the ability to 
