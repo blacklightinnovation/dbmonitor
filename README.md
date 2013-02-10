@@ -5,7 +5,7 @@
  kill queries directly from the interface. You also get up to date
  replication statistics, including lag time and Slave IO Status.
  
- Author jearly@blacklightinnovation.vom
+ Author jearly@blacklightinnovation.com
  
 
 # Installation Instructions
