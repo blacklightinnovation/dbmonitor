@@ -10,15 +10,15 @@
 
 # Installation Instructions
 
-1.) Download and unzip the source or git clone: https://github.com/jearly0/dbmonitor
+1.) Download and unzip the source or git clone: https://github.com/blacklightinnovation/dbmonitor
 
-<pre>wget https://github.com/jearly0/dbmonitor/archive/master.zip
+<pre>wget https://github.com/blacklightinnovation/dbmonitor/archive/master.zip
 
 tar -xzvf master.zip /var/www/where/ever/you/to/extract/this/dba
 </pre>
 or
 <pre>
-git clone git@github.com:jearly0/dbmonitor.git /var/www/where/ever/you/to/extract/this/dba
+git clone git@github.com:blacklightinnovation/dbmonitor.git /var/www/where/ever/you/to/extract/this/dba
 </pre>
 2.) Copy the Alias Directive for apache into your conf.d folder of your Apache Installation. Update the file to match your environment, directories, etc.
 
