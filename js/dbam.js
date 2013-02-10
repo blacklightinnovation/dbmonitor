@@ -73,7 +73,7 @@ var DBM = function(){
 	
 	this.update = function(params){
 		window.location.hash = JSON.stringify(params);
-		var url = 'monitor.php?' + $.param(params);
+		var url = 'class/monitor.php?' + $.param(params);
 		$.ajax({url: url,
 			error: function(jqXHR, textStatus, errorThrown) {
 				alert("Error getting data! \n" + "Error: " + errorThrown + "\n" + "Status: " + textStatus);
