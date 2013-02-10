@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>DBA Monitor</title>
+<link href="css/dba.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<script src="js/jquery.expander.js"></script>
+<script src='js/dbam.js'></script> 
+</head>
+<body>
+<div id="header"><img src="img/dbm-logo-small_flat.png"/></div>
+<div id="wrapper">
+<div id="refresh-interval"><span>Refresh Interval(Seconds): </span><input type="text" size="5" maxLength="5" value="10" class="ui-corner-all" id="refresh" /><div id="set-interval"></div></div>
+<div id="ReplicationStatus">
+<table id="slaveStatusTable">
+	<thead>
+		<tr>
+			<th colspan="8" style="text-align:left;"><h1>Replication Status</h1></th>
+		</tr>
+		<tr>
+			<th>Server Alias</td>
+			<th>Server Name</td>
+			<th>IP Address</td>
+			<th>Master Host</td>
+			<th>Relay Master Log</td>
+			<th>IO Thread</td>
+			<th>SQL Thread</td>
+			<th>Last Error</td>
+			<th>Lag Time</td>
+		</tr>
+	</thead>
+	<tbody id="slaveStatusRows">
+	</tbody>
+</table>
+</div>
+<div id="processList" name="processList">
+<table id="slowQueries">
+	<thead>
+		<tr>
+			<th colspan="9" style="text-align:left;"><h1>Slow Query Monitor</h1></th>
+		</tr>
+		<tr>
+			<th>Database Server</th>
+			<th>Process Id</th>
+			<th>User</th>
+			<th>Host</th>
+			<th>Database</th>
+			<th>Time</th>
+			<th>State</th>
+			<th>Info</th>
+			<th>Kill Query</th>
+		</tr>
+	</thead>
+	<tbody id="slowQueryRows">
+	</tbody>
+</table>
+</div>
+</div>
+<div id="confirm-kill"></div>
+<div id="warning"></div>
+<div class="popout-side-bar-holder" style="right:0px;">
+<img width="25" height="119" class="popout-side-bar-button" src="img/settings.png">
+<div class="popout-side-bar">
+<h3>Slow Query Thresholds(Seconds)</h3>
+	<div class="popout-iteration">
+		<p id="min-thresh">
+			<span>Min Threshold: &nbsp;</span>
+			<input type="text" size="4" maxLength="4" value="59" class="ui-corner-all" id="min-threshold" style="background:#E30000;color:#FFFFFF;" />
+		</p>
+		<p id="med-thresh">
+			<span>Med Threshold: &nbsp;</span>
+			<input type="text" size="4" maxLength="4" value="120" class="ui-corner-all" id="med-threshold" style="background:#FADF2D;color:#000000;" />
+		</p>
+		<p id="max-thresh">
+			<span>Max Threshold: &nbsp;</span>
+			<input type="text" size="4" maxLength="4" value="300" class="ui-corner-all" id="max-threshold" style="background:#FFFFFF;color:#666699;" />
+		</p>
+		<p><a id="thresh-button"></a></p>
+	</div>
+</div>
+</div>
+<div id="push"></div>
+<div id="footer">
+<p><a href="http://www.blacklightinnovation.com">Powered by <img src="img/bl_bulb.png"/></a></p>
+</div>
+<script>
+$(document).ready(function() {
+	var tpd = new DBM();
+	});
+</script>
+</body>
+</html>

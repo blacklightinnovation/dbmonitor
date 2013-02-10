@@ -1,0 +1,210 @@
+/**
+* MySQL Monitor Styles
+*
+* author: jearly@blacklightinnovation.com
+*
+**/
+html {
+    height: 100%;
+    background-image:url('../dbmimg/scrap-metal.jpg');
+}
+
+body {
+    height: 100%;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+#wrapper {
+    overflow:hidden;
+    background: #FFFFFF;
+    width: 1260px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    opacity: 0.95;
+    opacity: 0.9;
+    padding-bottom:25px;
+}
+#processList {
+    margin-top: 25px;
+    padding-top: 25px;
+}
+#ReplicationStatus {
+    margin-top: 25px;
+    padding-top: 25px;
+}
+#refresh {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: "Lucida Sans Unicode","Lucida Grande",Sans-Serif;
+    font-size: 15px;
+    height: 35px;
+    text-align: right;
+    opacity:0.9;
+    color: #003399;
+    
+}
+#refresh-interval {
+    padding: 25px;
+    float: right;
+}
+
+#refresh-interval span {
+    font-family: "Lucida Sans Unicode","Lucida Grande",Sans-Serif;
+    font-size: 15px;
+    opacity:0.9;
+    color: #003399;
+}
+#slowQueries, #slaveStatusTable{
+    border-collapse: collapse;
+    font-family: "Lucida Sans Unicode","Lucida Grande",Sans-Serif;
+    font-size: 12px;
+    margin: 0 auto;
+    width:90%;
+    text-align: left;
+}
+#slowQueries th, #slaveStatusTable th {
+    color: #003399;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 12px 15px;
+}
+#slowQueries th h3, #slaveStatusTable th h3 {
+    color: #003399;
+    margin: 0;
+    padding: 0;
+}
+#slowQueries td, #slaveStatusTable td {
+    border-top: 1px solid #E8EDFF;
+    padding: 10px 15px;
+}
+.oce-first {
+    background: none repeat scroll 0 0 #D0DAFD;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+#slowQueries  tr:hover td, #slaveStatusTable tr:hover td {
+    background: none repeat scroll 0 0 #EFF2FF;
+    color: #333399;
+}
+#slideout {
+    float:right;
+    background:#666;
+    position:absolute;
+    width:300px;
+    height:80px;
+    top:45%;
+    right:-280px;
+}
+#clickme {
+    float:left;
+    height:80px;
+    width:20px;
+    background:#ff0000;
+}
+#slidecontent {
+    float:right;
+}
+#push {
+    height:62px;
+}
+#footer {
+	opacity:0.9;
+	color: #FFFFFF;
+	text-align:center;
+	font-weight:bold;
+	font-family: "Lucida Sans Unicode","Lucida Grande",Sans-Serif;
+	font-size:10px;
+}
+#footer a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+/**                            **/
+
+.popout-side-bar h3 {
+    font-size: 15px;
+    margin-left: 3px;
+    margin-top: 3px;
+    text-align: center;
+}
+.popout-side-bar-menu img {
+    margin-right: 3px;
+    vertical-align: text-bottom;
+}
+.popout-side-bar-menu {
+    list-style: none outside none;
+    margin: 0 0 10px 6px;
+    padding-left: 0;
+}
+.popout-side-bar-menu li {
+    margin-bottom: 4px;
+}
+.popout-side-bar a {
+    color: #444444;
+    text-decoration: none;
+}
+.popout-side-bar a:hover {
+    text-decoration: none;
+}
+.popout-iteration small {
+    color: #888888;
+    font-style: italic;
+}
+.popout-iteration img {
+    float: right !important;
+    margin: 5px 1px 0 !important;
+}
+.popout-iteration {
+    border-top: 1px solid #E1E1E1;
+    padding-left: 5px;
+    padding-top: 2px;
+    width: 100%;
+}
+
+.popout-iteration span {
+    color: #003399;
+    font-family: "Lucida Sans Unicode","Lucida Grande",Sans-Serif;
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+.popout-iteration input[type='text'] {
+    font-family: "Lucida Sans Unicode","Lucida Grande",Sans-Serif;
+    font-size: 15px;
+    height: 35px;
+    margin-left: 10px;
+    margin-right: 10px;
+    opacity: 0.5;
+    text-align: right;
+}
+.popout-side-bar h1 {
+    font-size: 18px;
+    text-align: center;
+    font-family: "Lucida Sans Unicode","Lucida Grande",Sans-Serif;
+}
+.popout-side-bar-button {
+    float: left;
+    margin-right: -2px;
+    margin-top: 20px;
+}
+.popout-side-bar-holder {
+    position: absolute;
+    right: -226px;
+    top: 180px;
+    width: 250px;
+}
+
+.popout-side-bar {
+    background-color: #FEFEFE;
+    font-family: "Lucida Sans Unicode","Lucida Grande",Sans-Serif;
+    border-bottom: 2px solid #A0A0A0;
+    border-bottom-left-radius: 5px;
+    border-left: 2px solid #A0A0A0;
+    border-top: 2px solid #A0A0A0;
+    border-top-left-radius: 5px;
+    box-shadow: 0 0 5px #888888;
+    min-height: 250px;
+    overflow: hidden;
+    padding: 3px 6px 3px 3px;
+}
