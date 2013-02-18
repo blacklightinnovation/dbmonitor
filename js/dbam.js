@@ -59,7 +59,7 @@ var DBM = function(){
 	
 	this.killQuery = function(params){
 		window.location.hash = JSON.stringify(params);
-		var url = 'monitor.php?' + $.param(params);
+		var url = 'class/monitor.php?' + $.param(params);
 		$.ajax({url: url,
 			error: function(jqXHR, textStatus, errorThrown) {
 				alert("Error killing query! \n" + "Error: " + errorThrown + "\n" + "Status: " + textStatus);
