@@ -4,7 +4,6 @@
  view of your mysql servers. You have the ability to 
  kill queries directly from the interface. You also get up to date
  replication statistics, including lag time and Slave IO Status.
- 
 
 # Installation Instructions
 
@@ -16,7 +15,7 @@ tar -xzvf master.zip /var/www/where/ever/you/to/extract/this/dba
 </pre>
 or
 <pre>
-git clone git@github.com:blacklightinnovation/dbmonitor.git /var/www/where/ever/you/to/extract/this/dba
+git clone git@github.com:blacklightinnovation/dbmonitor.git /path/where/you/to/extract/this/dba
 </pre>
 2.) Copy the Alias Directive for apache into your conf.d folder of your Apache Installation. Update the file to match your environment, directories, etc.
 
